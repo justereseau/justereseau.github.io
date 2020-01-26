@@ -1,0 +1,51 @@
+{
+  "results": [
+    {
+      "links": [
+        {
+          "endpoints": [
+	    {
+	      "name": "enpoint1 to endpoint2 input",
+              "label": "label for endpoint1"
+	    },
+	    {
+	      "name": "endpoint1 to endpoint2 output",
+              "label": "label for endpoint2"
+	    }
+	  ],
+          "path": [
+            {
+              "lon": "138.8671875",
+              "order": "10",
+              "lat": "36.0313317763319"
+            },
+            {
+              "lon": "-122.335927373024",
+              "order": "20",
+              "lat": "47.5652166492485"
+            }
+          ],
+          "name": "Link Name"
+        }
+      ],
+      "endpoints": [
+        {
+          "pop_id": null,
+          "lon": "139.853142695116",
+          "real_lon": null,
+          "real_lat": null,
+          "name": "endpoint1",
+          "lat": "35.7653023546885"
+        },
+        {
+          "pop_id": null,
+          "lon": "-122.335927373024",
+          "real_lon": null,
+          "real_lat": null,
+          "name": "endpoint2",
+          "lat": "47.5652166492485"
+        }
+      ]
+    }
+  ]
+}
