@@ -15,8 +15,16 @@
   <meta charset="utf-8">
   <title>Juste Réseau</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <meta content="" name="keywords">
-  <meta content="" name="description">
+  <meta content="juste réseau, hébergement infonuagique, collocation de serveurs, monitoring, logging, alerting, humour" name="keywords">
+  <meta content="Juste Réseau est un site personnel humoristique sur l'hébergement infonuagique et la collocation de serveurs. Projet fictif, sans lien avec une entreprise réelle." name="description">
+  <meta content="index, follow" name="robots">
+
+  <!-- Open Graph -->
+  <meta content="Juste Réseau" property="og:title">
+  <meta content="Site personnel humoristique sur l'hébergement infonuagique et la collocation de serveurs. Projet fictif, sans lien avec une entreprise réelle." property="og:description">
+  <meta content="https://justereseau.ca/img/intro-carousel/1.jpg" property="og:image">
+  <meta content="https://justereseau.ca/" property="og:url">
+  <meta content="website" property="og:type">
 
   <!-- Favicons -->
   <link href="img/favicon.png" rel="icon">
@@ -55,11 +63,12 @@
     <div class="container-fluid">
 
       <div id="logo" class="pull-left">
-        <a href="#intro"><img src="img/logo.png" alt="" title="" height="40px" /></a>
+        <a href="#intro"><img src="img/logo.png" alt="Juste Réseau" title="Juste Réseau" height="40px" /></a>
       </div>
 
       <nav id="nav-menu-container">
         <ul class="nav-menu">
+          <li><a href="#mentions-legales">Mentions légales</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav><!-- #nav-menu-container -->
@@ -71,14 +80,14 @@
   ============================-->
   <section id="intro">
     <div class="intro-container">
-      <div id="introCarousel" class="carousel  slide carousel-fade" data-ride="carousel">
+      <div id="introCarousel" class="carousel  slide carousel-fade" data-bs-ride="carousel">
 
-        <ol class="carousel-indicators"></ol>
+        <div class="carousel-indicators"></div>
 
         <div class="carousel-inner" role="listbox">
 
           <div class="carousel-item active">
-            <div class="carousel-background"><img src="img/intro-carousel/1.jpg" alt=""></div>
+            <div class="carousel-background"><img src="img/intro-carousel/1.jpg" alt="Hébergement de services infonuagiques"></div>
             <div class="carousel-container">
               <div class="carousel-content">
                 <h2>Hébergement de services infonuagiques</h2>
@@ -89,7 +98,7 @@
           </div>
 
           <div class="carousel-item">
-            <div class="carousel-background"><img src="img/intro-carousel/2.jpg" alt=""></div>
+            <div class="carousel-background"><img src="img/intro-carousel/2.jpg" alt="Collocation de serveurs"></div>
             <div class="carousel-container">
               <div class="carousel-content">
                 <h2>Collocation de serveurs</h2>
@@ -102,14 +111,14 @@
 
         </div>
 
-        <a class="carousel-control-prev" href="#introCarousel" role="button" data-slide="prev">
+        <a class="carousel-control-prev" href="#introCarousel" role="button" data-bs-slide="prev">
           <span class="carousel-control-prev-icon ion-chevron-left" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
+          <span class="visually-hidden">Previous</span>
         </a>
 
-        <a class="carousel-control-next" href="#introCarousel" role="button" data-slide="next">
+        <a class="carousel-control-next" href="#introCarousel" role="button" data-bs-slide="next">
           <span class="carousel-control-next-icon ion-chevron-right" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
+          <span class="visually-hidden">Next</span>
         </a>
 
       </div>
@@ -134,33 +143,33 @@
           <div class="col-md-4 wow fadeInUp">
             <div class="about-col">
               <div class="img">
-                <img src="img/about-mission.jpg" alt="" class="img-fluid">
+                <img src="img/about-mission.jpg" alt="Monitoring" class="img-fluid">
                 <div class="icon"><i class="ion-ios-speedometer-outline"></i></div>
               </div>
               <h2 class="title"><a href="#">Monitoring</a></h2>
-              <p></p>
+              <p>Surveillance continue de vos infrastructures pour détecter les problèmes avant vos clients.</p>
             </div>
           </div>
 
           <div class="col-md-4 wow fadeInUp" data-wow-delay="0.1s">
             <div class="about-col">
               <div class="img">
-                <img src="img/about-plan.jpg" alt="" class="img-fluid">
+                <img src="img/about-plan.jpg" alt="Logging" class="img-fluid">
                 <div class="icon"><i class="ion-ios-list-outline"></i></div>
               </div>
               <h2 class="title"><a href="#">Logging</a></h2>
-              <p></p>
+              <p>Centralisation des journaux pour retracer facilement l'origine d'un incident.</p>
             </div>
           </div>
 
           <div class="col-md-4 wow fadeInUp" data-wow-delay="0.2s">
             <div class="about-col">
               <div class="img">
-                <img src="img/about-vision.jpg" alt="" class="img-fluid">
+                <img src="img/about-vision.jpg" alt="Alerting" class="img-fluid">
                 <div class="icon"><i class="ion-ios-bell-outline"></i></div>
               </div>
               <h2 class="title"><a href="#">Alerting</a></h2>
-              <p></p>
+              <p>Notifications instantanées dès qu'un service a besoin de votre attention.</p>
             </div>
           </div>
 
@@ -283,6 +292,37 @@
         </div>
       </div>
     </section><!-- #contact -->
+
+    <!--==========================
+      Mentions légales Section
+    ============================-->
+    <section id="mentions-legales" class="section-bg wow fadeInUp">
+      <div class="container">
+
+        <div class="section-header">
+          <h3>Mentions légales</h3>
+          <p>Avis important</p>
+        </div>
+
+        <div class="row">
+          <div class="col-md-10 offset-md-1 text-center">
+            <p>
+              <strong>Juste Réseau</strong> est un site personnel à vocation humoristique, créé pour le plaisir.
+              Il n'est ni affilié, ni associé, ni représentatif d'une véritable entreprise. Les informations
+              présentées sur cette page (statistiques, « clients », « projets », compétences, etc.) sont fictives
+              et n'ont qu'une valeur de divertissement.
+            </p>
+            <p>
+              L'exploration, l'indexation et la reproduction du contenu de ce site par des robots
+              d'intelligence artificielle, notamment pour l'entraînement de modèles, ne sont pas autorisées.
+              Voir le fichier <a href="/robots.txt">robots.txt</a> pour les règles applicables aux robots et
+              moteurs de recherche.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- #mentions-legales -->
 
   </main>
 

@@ -145,8 +145,8 @@
   var introCarouselIndicators = $(".carousel-indicators");
   introCarousel.find(".carousel-inner").children(".carousel-item").each(function(index) {
     (index === 0) ?
-    introCarouselIndicators.append("<li data-target='#introCarousel' data-slide-to='" + index + "' class='active'></li>") :
-    introCarouselIndicators.append("<li data-target='#introCarousel' data-slide-to='" + index + "'></li>");
+    introCarouselIndicators.append("<button type='button' data-bs-target='#introCarousel' data-bs-slide-to='" + index + "' class='active' aria-current='true' aria-label='Slide " + (index + 1) + "'></button>") :
+    introCarouselIndicators.append("<button type='button' data-bs-target='#introCarousel' data-bs-slide-to='" + index + "' aria-label='Slide " + (index + 1) + "'></button>");
 
     $(this).css("background-image", "url('" + $(this).children('.carousel-background').children('img').attr('src') +"')");
     $(this).children('.carousel-background').remove();
@@ -154,8 +154,9 @@
 
   $(".carousel").swipe({
     swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
-      if (direction == 'left') $(this).carousel('next');
-      if (direction == 'right') $(this).carousel('prev');
+      var carouselInstance = bootstrap.Carousel.getOrCreateInstance(this);
+      if (direction == 'left') carouselInstance.next();
+      if (direction == 'right') carouselInstance.prev();
     },
     allowPageScroll:"vertical"
   });
