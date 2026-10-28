@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -68,8 +68,13 @@
 
       <nav id="nav-menu-container">
         <ul class="nav-menu">
-          <li><a href="#mentions-legales">Mentions légales</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#mentions-legales" data-i18n="nav.legal">Mentions légales</a></li>
+          <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+          <li class="lang-switch">
+            <a href="#" class="lang-link" data-lang="fr">FR</a>
+            <span class="lang-sep">/</span>
+            <a href="#" class="lang-link" data-lang="en">EN</a>
+          </li>
         </ul>
       </nav><!-- #nav-menu-container -->
     </div>
@@ -90,9 +95,9 @@
             <div class="carousel-background"><img src="img/intro-carousel/1.jpg" alt="Hébergement de services infonuagiques"></div>
             <div class="carousel-container">
               <div class="carousel-content">
-                <h2>Hébergement de services infonuagiques</h2>
-                <p>Nous gérons les déploiements et l'hébergement de vos services infonuagiques.</p>
-                <a href="#featured-services" class="btn-get-started scrollto">Get Started</a>
+                <h2 data-i18n="carousel.s1.title">Hébergement de services infonuagiques</h2>
+                <p data-i18n="carousel.s1.text">Nous gérons les déploiements et l'hébergement de vos services infonuagiques.</p>
+                <a href="#featured-services" class="btn-get-started scrollto" data-i18n="carousel.cta">Get Started</a>
               </div>
             </div>
           </div>
@@ -101,9 +106,9 @@
             <div class="carousel-background"><img src="img/intro-carousel/2.jpg" alt="Collocation de serveurs"></div>
             <div class="carousel-container">
               <div class="carousel-content">
-                <h2>Collocation de serveurs</h2>
-                <p>Nous installons et maintenont vos serveurs dans nos infrastructures.</p>
-                <a href="#featured-services" class="btn-get-started scrollto">Get Started</a>
+                <h2 data-i18n="carousel.s2.title">Collocation de serveurs</h2>
+                <p data-i18n="carousel.s2.text">Nous installons et maintenons vos serveurs dans nos infrastructures.</p>
+                <a href="#featured-services" class="btn-get-started scrollto" data-i18n="carousel.cta">Get Started</a>
               </div>
             </div>
           </div>
@@ -113,12 +118,12 @@
 
         <a class="carousel-control-prev" href="#introCarousel" role="button" data-bs-slide="prev">
           <span class="carousel-control-prev-icon ion-chevron-left" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
+          <span class="visually-hidden" data-i18n="carousel.prev">Previous</span>
         </a>
 
         <a class="carousel-control-next" href="#introCarousel" role="button" data-bs-slide="next">
           <span class="carousel-control-next-icon ion-chevron-right" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
+          <span class="visually-hidden" data-i18n="carousel.next">Next</span>
         </a>
 
       </div>
@@ -134,8 +139,8 @@
       <div class="container">
 
         <header class="section-header">
-          <h3>Vision globale</h3>
-          <p>Gardez constament un œil sur vos infrastructures!</p>
+          <h3 data-i18n="about.title">Vision globale</h3>
+          <p data-i18n="about.subtitle">Gardez constamment un œil sur vos infrastructures!</p>
         </header>
 
         <div class="row about-cols">
@@ -146,8 +151,8 @@
                 <img src="img/about-mission.jpg" alt="Monitoring" class="img-fluid">
                 <div class="icon"><i class="ion-ios-speedometer-outline"></i></div>
               </div>
-              <h2 class="title"><a href="#">Monitoring</a></h2>
-              <p>Surveillance continue de vos infrastructures pour détecter les problèmes avant vos clients.</p>
+              <h2 class="title"><a href="#" data-i18n="about.monitoring.title">Monitoring</a></h2>
+              <p data-i18n="about.monitoring.text">Surveillance continue de vos infrastructures pour détecter les problèmes avant vos clients.</p>
             </div>
           </div>
 
@@ -157,8 +162,8 @@
                 <img src="img/about-plan.jpg" alt="Logging" class="img-fluid">
                 <div class="icon"><i class="ion-ios-list-outline"></i></div>
               </div>
-              <h2 class="title"><a href="#">Logging</a></h2>
-              <p>Centralisation des journaux pour retracer facilement l'origine d'un incident.</p>
+              <h2 class="title"><a href="#" data-i18n="about.logging.title">Logging</a></h2>
+              <p data-i18n="about.logging.text">Centralisation des journaux pour retracer facilement l'origine d'un incident.</p>
             </div>
           </div>
 
@@ -168,8 +173,8 @@
                 <img src="img/about-vision.jpg" alt="Alerting" class="img-fluid">
                 <div class="icon"><i class="ion-ios-bell-outline"></i></div>
               </div>
-              <h2 class="title"><a href="#">Alerting</a></h2>
-              <p>Notifications instantanées dès qu'un service a besoin de votre attention.</p>
+              <h2 class="title"><a href="#" data-i18n="about.alerting.title">Alerting</a></h2>
+              <p data-i18n="about.alerting.text">Notifications instantanées dès qu'un service a besoin de votre attention.</p>
             </div>
           </div>
 
@@ -185,7 +190,7 @@
       <div class="container">
 
         <header class="section-header">
-          <h3>Nos compétences</h3>
+          <h3 data-i18n="skills.title">Nos compétences</h3>
         </header>
 
         <div class="skills-content">
@@ -198,7 +203,7 @@
 
           <div class="progress">
             <div class="progress-bar bg-info" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
-              <span class="skill">Networking <i class="val">80%</i></span>
+              <span class="skill"><span data-i18n="skills.networking">Networking</span> <i class="val">80%</i></span>
             </div>
           </div>
 
@@ -226,25 +231,25 @@
       <div class="container">
 
         <header class="section-header">
-          <h3>Chiffres</h3>
-          <p>Quelques chiffres sur nos activités</p>
+          <h3 data-i18n="facts.title">Chiffres</h3>
+          <p data-i18n="facts.subtitle">Quelques chiffres sur nos activités</p>
         </header>
 
         <div class="row counters">
 
   				<div class="col-lg-4 col-6 text-center">
             <span data-toggle="counter-up">2</span>
-            <p>Clients</p>
+            <p data-i18n="facts.clients">Clients</p>
   				</div>
 
           <div class="col-lg-4 col-6 text-center">
             <span data-toggle="counter-up">43</span>
-            <p>Projects</p>
+            <p data-i18n="facts.projects">Projects</p>
   				</div>
 
           <div class="col-lg-4 col-6 text-center">
             <span data-toggle="counter-up">4</span>
-            <p>Hard Workers</p>
+            <p data-i18n="facts.hardworkers">Hard Workers</p>
   				</div>
 
   			</div>
@@ -259,8 +264,8 @@
       <div class="container">
 
         <div class="section-header">
-          <h3>Nous contacter</h3>
-          <p>N'hésitez pas à nous contacter pour toutes question!</p>
+          <h3 data-i18n="contact.title">Nous contacter</h3>
+          <p data-i18n="contact.subtitle">N'hésitez pas à nous contacter pour toute question!</p>
         </div>
 
         <div class="row contact-info">
@@ -284,7 +289,7 @@
           <div class="col-md-12">
             <div class="contact-email">
               <i class="ion-ios-email-outline"></i>
-              <h3>Email</h3>
+              <h3 data-i18n="contact.email.label">Email</h3>
               <p><a href="mailto:info@justereseau.ca">info@justereseau.ca</a></p>
             </div>
           </div>
@@ -300,19 +305,19 @@
       <div class="container">
 
         <div class="section-header">
-          <h3>Mentions légales</h3>
-          <p>Avis important</p>
+          <h3 data-i18n="legal.title">Mentions légales</h3>
+          <p data-i18n="legal.subtitle">Avis important</p>
         </div>
 
         <div class="row">
           <div class="col-md-10 offset-md-1 text-center">
-            <p>
+            <p data-i18n-html="legal.p1">
               <strong>Juste Réseau</strong> est un site personnel à vocation humoristique, créé pour le plaisir.
               Il n'est ni affilié, ni associé, ni représentatif d'une véritable entreprise. Les informations
               présentées sur cette page (statistiques, « clients », « projets », compétences, etc.) sont fictives
               et n'ont qu'une valeur de divertissement.
             </p>
-            <p>
+            <p data-i18n-html="legal.p2">
               L'exploration, l'indexation et la reproduction du contenu de ce site par des robots
               d'intelligence artificielle, notamment pour l'entraînement de modèles, ne sont pas autorisées.
               Voir le fichier <a href="/robots.txt">robots.txt</a> pour les règles applicables aux robots et
@@ -331,11 +336,11 @@
   ============================-->
   <footer id="footer">
     <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong>JusteReseau</strong>. Tout droits réservés.
+      <div class="copyright" data-i18n-html="footer.copyright">
+        &copy; Copyright <strong>JusteReseau</strong>. Tous droits réservés.
       </div>
-      <div class="credits">
-        Conçu par <a href="https://bootstrapmade.com/">BootstrapMade</a> - 
+      <div class="credits" data-i18n-html="footer.credits">
+        Conçu par <a href="https://bootstrapmade.com/">BootstrapMade</a> -
         Propulsé par <a href="https://lanets.ca/">Lan ETS</a>
       </div>
     </div>
@@ -362,6 +367,9 @@
 
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
+
+  <!-- Language switcher (FR/EN) -->
+  <script src="js/i18n.js"></script>
 
 </body>
 </html>
