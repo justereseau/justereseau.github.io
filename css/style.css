@@ -282,7 +282,7 @@ h6 {
   line-height: 1;
 }
 
-#intro .carousel-indicators li {
+#intro .carousel-indicators button {
   cursor: pointer;
 }
 

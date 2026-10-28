@@ -145,8 +145,8 @@
   var introCarouselIndicators = $(".carousel-indicators");
   introCarousel.find(".carousel-inner").children(".carousel-item").each(function(index) {
     (index === 0) ?
-    introCarouselIndicators.append("<li data-bs-target='#introCarousel' data-bs-slide-to='" + index + "' class='active'></li>") :
-    introCarouselIndicators.append("<li data-bs-target='#introCarousel' data-bs-slide-to='" + index + "'></li>");
+    introCarouselIndicators.append("<button type='button' data-bs-target='#introCarousel' data-bs-slide-to='" + index + "' class='active' aria-current='true' aria-label='Slide " + (index + 1) + "'></button>") :
+    introCarouselIndicators.append("<button type='button' data-bs-target='#introCarousel' data-bs-slide-to='" + index + "' aria-label='Slide " + (index + 1) + "'></button>");
 
     $(this).css("background-image", "url('" + $(this).children('.carousel-background').children('img').attr('src') +"')");
     $(this).children('.carousel-background').remove();
