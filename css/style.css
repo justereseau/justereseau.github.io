@@ -905,6 +905,13 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding: 60px 0;
 }
 
+/* Mentions légales Section
+--------------------------------*/
+
+#mentions-legales {
+  padding: 60px 0;
+}
+
 #portfolio #portfolio-flters {
   padding: 0;
   margin: 5px 0 35px 0;
