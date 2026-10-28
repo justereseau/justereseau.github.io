@@ -428,7 +428,6 @@ h6 {
 
 /* Language Switcher */
 
-.nav-menu .lang-switch,
 #mobile-nav .lang-switch {
   display: flex;
   align-items: center;
@@ -443,6 +442,7 @@ h6 {
 
 .nav-menu .lang-switch a {
   padding: 0 4px 10px 4px;
+  vertical-align: baseline;
 }
 
 #mobile-nav .lang-switch a {
@@ -455,8 +455,13 @@ h6 {
 }
 
 .lang-switch .lang-sep {
+  display: inline-block;
   color: #fff;
   opacity: 0.4;
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  vertical-align: baseline;
 }
 
 /* Mobile Nav Toggle */
