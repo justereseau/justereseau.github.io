@@ -426,6 +426,39 @@ h6 {
   margin: 0;
 }
 
+/* Language Switcher */
+
+.nav-menu .lang-switch,
+#mobile-nav .lang-switch {
+  display: flex;
+  align-items: center;
+}
+
+.nav-menu .lang-switch a,
+#mobile-nav .lang-switch a {
+  display: inline-block;
+  width: auto;
+  opacity: 0.6;
+}
+
+.nav-menu .lang-switch a {
+  padding: 0 4px 10px 4px;
+}
+
+#mobile-nav .lang-switch a {
+  padding: 10px 6px;
+}
+
+.lang-switch a.active {
+  opacity: 1;
+  color: #ff741f;
+}
+
+.lang-switch .lang-sep {
+  color: #fff;
+  opacity: 0.4;
+}
+
 /* Mobile Nav Toggle */
 
 #mobile-nav-toggle {
